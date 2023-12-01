@@ -5,7 +5,7 @@ from utils import timed, get_input_lines
 def part_1(input_lines):
     s = sum(  # sum them all up
         [
-            int(d[0]) * 10 + int(d[-1])  # first digit is 10s place, second digit is 1s
+            int(d[0]) * 10 + int(d[-1])  # first digit is 10s place, last digit is 1s
             for d in [  # find all the digits in the line
                 re.findall(r"\d", line) for line in input_lines
             ]
