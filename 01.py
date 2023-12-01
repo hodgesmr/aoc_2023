@@ -31,11 +31,11 @@ def part_2(input_lines):
     # this allows us to find 'two' and 'one' within 'twone'
     # based on the keys in the map, and digits
     # (?=(one|two|three|four|five|six|seven|eight|nine|\d))
-    regex_patter = rf"(?=({'|'.join(map.keys())}|\d))"
+    regex_pattern = rf"(?=({'|'.join(map.keys())}|\d))"
 
     sum = 0
     for line in input_lines:
-        discovered_numbers = re.findall(regex_patter, line)
+        discovered_numbers = re.findall(regex_pattern, line)
         tens = map.get(discovered_numbers[0], discovered_numbers[0])
         ones = map.get(discovered_numbers[-1], discovered_numbers[-1])
         line_value = int(tens) * 10 + int(ones)
