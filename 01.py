@@ -11,7 +11,7 @@ def part_1(input_lines):
             ]
         ]
     )
-    print(s)
+    return s
 
 
 def part_2(input_lines):
@@ -41,7 +41,7 @@ def part_2(input_lines):
         line_value = int(tens) * 10 + int(ones)
         sum += line_value
 
-    print(sum)
+    return sum
 
 
 timed(part_1, [get_input_lines()])
