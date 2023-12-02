@@ -1,4 +1,3 @@
-import re
 from utils import timed, get_input_lines
 
 
