@@ -21,7 +21,7 @@ def part_1(input):
                     num, color = cube.strip().split(" ")
                     num = int(num)
 
-                    # update the game vector
+                    # update the pull vector
                     if color == "red":
                         pull_vector[0] = num
                     elif color == "green":
